@@ -16,8 +16,8 @@
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-<h3 id="images1"><a href="#images1" class="headerlink" title="images1"></a>images1</h3><p><img src="https://i.imgur.com/KfKcweI.jpg" alt="绝对路径"></p>
-<h3 id="images2"><a href="#images2" class="headerlink" title="images2"></a>images2</h3><p><img src alt="相对路径"></p>
+<h3 id="images1"><a href="#images1" class="headerlink" title="images1"></a>images1</h3><p><img src="https://i.loli.net/2021/11/16/OzTLpVuc7IPHtkJ.jpg" alt="绝对路径"></p>
+<h3 id="images2"><a href="#images2" class="headerlink" title="images2"></a>images2</h3><p><img src="images/kangna.jpg" alt="相对路径"></p>
 ]]></content>
   </entry>
   <entry>

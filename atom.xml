@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  <icon>https://monster612.github.io/icon.png</icon>
+  <title>Zi-Mu&#39;blog</title>
+  
   
   <link href="https://monster612.github.io/atom.xml" rel="self"/>
   
@@ -10,7 +10,7 @@
   <id>https://monster612.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>Zi-Mu</name>
     
   </author>
   

@@ -35,7 +35,7 @@
   <entry>
     <title>image.md</title>
     <url>/2021/6FNRGE/</url>
-    <content><![CDATA[<p><img src="images/kangna.jpg" alt="绝对路径"></p>
+    <content><![CDATA[<p>相对路径<br><img src="images/kangna.jpg" alt="相对路径"><br>绝对路径<br><img src="https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg" alt="绝对路径"></p>
 ]]></content>
   </entry>
 </search>

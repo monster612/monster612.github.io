@@ -42,14 +42,14 @@
     <link href="https://monster612.github.io/2021/6FNRGE/"/>
     <id>https://monster612.github.io/2021/6FNRGE/</id>
     <published>2021-11-16T13:23:49.000Z</published>
-    <updated>2021-11-16T13:42:03.687Z</updated>
+    <updated>2021-11-20T05:37:45.887Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;p&gt;&lt;img src=&quot;images/kangna.jpg&quot;</summary>
+    <summary type="html">&lt;p&gt;相对路径&lt;br&gt;&lt;img src=&quot;images/kangna.jpg&quot; alt=&quot;相对路径&quot;&gt;&lt;br&gt;绝对路径&lt;br&gt;&lt;img src=&quot;https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg&quot;</summary>
         
       
     

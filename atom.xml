@@ -6,7 +6,7 @@
   <link href="https://monster612.github.io/atom.xml" rel="self"/>
   
   <link href="https://monster612.github.io/"/>
-  <updated>2022-04-17T08:48:58.377Z</updated>
+  <updated>2022-04-17T13:00:12.878Z</updated>
   <id>https://monster612.github.io/</id>
   
   <author>
@@ -17,11 +17,37 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>hexo编写博客问题</title>
+    <link href="https://monster612.github.io/2022/3CZHVK4/"/>
+    <id>https://monster612.github.io/2022/3CZHVK4/</id>
+    <published>2022-04-17T12:38:59.000Z</published>
+    <updated>2022-04-17T13:00:12.878Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;创建并部署博客的基本步骤&quot;&gt;&lt;a href=&quot;#创建并部署博客的基本步骤&quot; class=&quot;headerlink&quot; title=&quot;创建并部署博客的基本步骤&quot;&gt;&lt;/a&gt;创建并部署博客的基本步骤&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;&lt;code&gt;hexo new</summary>
+        
+      
+    
+    
+    
+    <category term="hexo" scheme="https://monster612.github.io/categories/hexo/"/>
+    
+    
+    <category term="hexo" scheme="https://monster612.github.io/tags/hexo/"/>
+    
+  </entry>
+  
+  <entry>
     <title>html+css基础</title>
     <link href="https://monster612.github.io/2022/1259MQK/"/>
     <id>https://monster612.github.io/2022/1259MQK/</id>
     <published>2022-04-17T08:30:48.000Z</published>
-    <updated>2022-04-17T08:48:58.377Z</updated>
+    <updated>2022-04-17T10:18:32.365Z</updated>
     
     
       

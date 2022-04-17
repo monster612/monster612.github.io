@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>article_name</title>
-    <url>/2021/3Q63Y87/</url>
-    <content><![CDATA[<p><img src="/2021/3Q63Y87/hh.jpg" alt="相对路径"></p>
-]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2021/151FCAP/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -33,6 +27,51 @@
       </tags>
   </entry>
   <entry>
+    <title>article_name</title>
+    <url>/2021/3Q63Y87/</url>
+    <content><![CDATA[<p><img src="/2021/3Q63Y87/hh.jpg" alt="相对路径"></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>hexo编写博客问题</title>
+    <url>/2022/3CZHVK4/</url>
+    <content><![CDATA[<h3 id="创建并部署博客的基本步骤"><a href="#创建并部署博客的基本步骤" class="headerlink" title="创建并部署博客的基本步骤"></a>创建并部署博客的基本步骤</h3><ol>
+<li><code>hexo new **</code><br>创建一个名字为**的博客，具体title也可在文档中修改</li>
+<li><code>hexo clean</code><br>清除缓存文件 db.json 和已生成的静态文件 public</li>
+<li><code>hexo g</code> <code>hexo generate </code>的缩写</li>
+</ol>
+<ul>
+<li>生成网站静态文件到默认设置的 public 文件夹。</li>
+<li>便于查看网站生成的静态文件或者手动部署网站；</li>
+<li>如果使用自动部署，不需要先执行该命令；</li>
+</ul>
+<ol start="4">
+<li><code>hexo s</code> <code>hexo server</code>的缩写</li>
+</ol>
+<ul>
+<li><p>启动本地服务器，用于预览主题。默认地址： <a href="http://localhost:4000/">http://localhost:4000/</a></p>
+</li>
+<li><p>预览的同时可以修改文章内容或主题代码，保存后刷新页面即可</p>
+</li>
+</ul>
+<ol start="5">
+<li><code>hexo d</code> <code>hexo deploy</code>的缩写</li>
+</ol>
+<ul>
+<li>自动生成网站静态文件，并部署到设定的仓库。<h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3></li>
+<li><code>hexo s</code>有时候会出现以下报错<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">FATAL Port 4000 has been used. Try other port instead.</span><br><span class="line">FATAL &#123;</span><br><span class="line">  err: Error: listen EADDRINUSE: address already in use :::4000</span><br><span class="line">      at Server.setupListenHandle [as _listen2] (node:net:1334:16)</span><br><span class="line">      at listenInCluster (node:net:1382:12)</span><br><span class="line">      at Server.listen (node:net:1469:7)</span><br></pre></td></tr></table></figure>
+可以在站点下的文件_config.yml内加上如下代码更改hexo-server运行时的端口号：<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">server:</span><br><span class="line">    port: 40401</span><br><span class="line">    compress: true</span><br><span class="line">    header: true</span><br></pre></td></tr></table></figure>
+或者使用命令<code>hexo serve -p 更改的端口号</code></li>
+</ul>
+]]></content>
+      <categories>
+        <category>hexo</category>
+      </categories>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>image.md</title>
     <url>/2021/6FNRGE/</url>
     <content><![CDATA[<p>相对路径<br><img src="images/kangna.jpg" alt="相对路径"><br>绝对路径<br><img src="https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg" alt="绝对路径"></p>
@@ -43,7 +82,7 @@
     <url>/2022/1259MQK/</url>
     <content><![CDATA[<h2 id="一，Html和CSS的关系"><a href="#一，Html和CSS的关系" class="headerlink" title="一，Html和CSS的关系"></a>一，Html和CSS的关系</h2><ul>
 <li>HTML是网页内容的载体。内容就是网页制作者放在页面上想要让用户浏览的信息，可以包含文字、图片、视频等。</li>
-<li> CSS样式是表现。就像网页的外衣。比如，标题字体、颜色变化，或为标题加入背景图片、边框等。所有这些用来改变内容外观的东西称之为表现。 </li>
+<li> CSS样式是表现。就像网页的外衣。比如，标题字体、颜色变化，或为标题加入背景图片、边框等。所有这些用来改变内容外观的东西称之为表现。</li>
 <li>JavaScript是用来实现网页上的特效效果。如：鼠标滑过弹出下拉菜单。或鼠标滑过表格的背景颜色改变。还有焦点新闻（新闻图片）的轮换。可以这么理解，有动画的，有交互的一般都是用JavaScript来实现的。</li>
 </ul>
 <ul>
@@ -67,9 +106,11 @@
 </li>
 <li><p>语义化：说的通俗点就是：明白每个标签的用途（在什么情况下我可以使用这个标签才合理）比如，网页上的文章的标题就得用标题标签，网页上的各个栏目的栏目名称也可以使用标题标签。</p>
 <ul>
-<li>语义化的作用<br>1）. 更容易被搜索引擎收录。<br>2）. 更容易让屏幕阅读器读出网页内容。<h2 id="二，认识标签（第一部分）"><a href="#二，认识标签（第一部分）" class="headerlink" title="二，认识标签（第一部分）"></a>二，认识标签（第一部分）</h2></li>
+<li>语义化的作用<br>1）. 更容易被搜索引擎收录。<br>2）. 更容易让屏幕阅读器读出网页内容。</li>
 </ul>
 </li>
+</ul>
+<h2 id="二，认识标签（第一部分）"><a href="#二，认识标签（第一部分）" class="headerlink" title="二，认识标签（第一部分）"></a>二，认识标签（第一部分）</h2><ul>
 <li><p>如果想在网页上显示文章，这时就需要<code>&lt;p&gt;</code>标签了，把文章的段落放到<code>&lt;p&gt;</code>标签中。<br>语法：</p>
 <figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">p</span>&gt;</span>段落文本<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br></pre></td></tr></table></figure></li>
 <li><p><hx>标签来制作文章的标题。<br>标题标签一共有6个，h1、h2、h3、h4、h5、h6分别为一级标题、二级标题、三级标题、四级标题、五级标题、六级标题。并且依据重要性递减。<code>&lt;h1&gt;</code>是最高的等级。<br>语法：</hx></p>
@@ -177,7 +218,7 @@
 <li>文本域，支持多行文本输入<br>当用户需要在表单中输入大段文字时，需要用到文本输入域。<br>语法：<br><code>&lt;textarea rows=&quot;行数&quot; cols=&quot;列数&quot;&gt;文本&lt;/textarea&gt;</code></li>
 </ul>
 <ol>
-<li><textarea>标签是成对出现的，以</textarea><textarea>开始，以</textarea>结束。</li>
+<li><code>&lt;textarea&gt;</code>标签是成对出现的，以<code>&lt;textarea&gt;</code>开始，以<code>&lt;/textarea&gt;</code>结束。</li>
 <li>cols ：多行输入域的列数。</li>
 <li>rows ：多行输入域的行数。</li>
 </ol>
@@ -271,7 +312,7 @@ color:red;
 这行代码会使class名为food下的子元素li加入红色实线边框。</li>
 <li>包含(后代)选择器<br>包含选择器，即加入空格,用于选择指定标签元素下的后辈元素。如右侧代码编辑器中的代码：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.first</span> <span class="selector-tag">span</span>&#123;<span class="attribute">color</span>:red;&#125;</span><br></pre></td></tr></table></figure></li>
 </ul>
-<p>请注意这个选择器与子选择器的  <strong>区别</strong> </p>
+<p>请注意这个选择器与子选择器的  <strong>区别</strong></p>
 <ol>
 <li>子选择器（child selector）仅是指它的直接后代，或者你可以理解为作用于子元素的第一代后代</li>
 <li>后代选择器是作用于所有子后代元素。后代选择器通过空格来进行选择，而子选择器是通过“&gt;”进行选择。<br>总结：&gt;作用于元素的第一代后代，空格作用于元素的所有后代。</li>
@@ -360,7 +401,7 @@ color:red;
 <li>border-color（边框颜色）中的颜色可设置为十六进制颜色，如:<br><code>border-color:#888;//前面的井号不要忘掉。</code></li>
 </ol>
 <ul>
-<li>盒模型–边框（二）<br>现在有一个问题，如果有想为p标签单独设置下边框，而其它三边都不设置边框样式怎么办呢？css样式中允许只为一个方向的边框设置样式：<br><code>div&#123;border-bottom:1px solid red;&#125;</code><br>同样可以使用下面代码实现其它三边上、右、左边框的设置：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">border-top</span>:<span class="number">1px</span> solid red;</span><br><span class="line"><span class="attribute">border-right</span>:<span class="number">1px</span> solid red; </span><br><span class="line"><span class="attribute">border-left</span>:<span class="number">1px</span> solid red;</span><br></pre></td></tr></table></figure></li>
+<li>盒模型–边框（二）<br>现在有一个问题，如果有想为p标签单独设置下边框，而其它三边都不设置边框样式怎么办呢？css样式中允许只为一个方向的边框设置样式：<br><code>div&#123;border-bottom:1px solid red;&#125;</code><br>同样可以使用下面代码实现其它三边上、右、左边框的设置：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="attribute">border-top</span>:<span class="number">1px</span> solid red;</span><br><span class="line"><span class="attribute">border-right</span>:<span class="number">1px</span> solid red;</span><br><span class="line"><span class="attribute">border-left</span>:<span class="number">1px</span> solid red;</span><br></pre></td></tr></table></figure></li>
 <li>盒模型–边界<br>元素与其它元素之间的距离可以使用边界（margin）来设置。边界也是可分为上、右、下、左。如下代码：<br><code>div&#123;margin:20px 10px 15px 30px;&#125;</code><br>也可以分开写：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line"><span class="attribute">margin-top</span>:<span class="number">20px</span>;</span><br><span class="line"><span class="attribute">margin-right</span>:<span class="number">10px</span>;</span><br><span class="line"><span class="attribute">margin-bottom</span>:<span class="number">15px</span>;</span><br><span class="line"><span class="attribute">margin-left</span>:<span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 如果上下左右的边界都为10px;可以这么写：<br><code>div&#123; margin:10px;&#125;</code><br>如果上下边界一样为10px，左右一样为20px，可以这么写：<br><code>div&#123; margin:10px 20px;&#125;</code><br>总结一下：padding和margin的区别，padding在边框里，margin在边框外。</li>
 <li>盒模型–填充<br>元素内容与边框之间是可以设置距离的，称之为填充。填充也可分为上、右、下、左。如下代码：<br><code>div&#123;padding:20px 10px15px 30px;&#125;</code><br>顺序一定不要搞混。可以分开写上面代码：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span>&#123;</span><br><span class="line"><span class="attribute">padding-top</span>:<span class="number">20px</span>;</span><br><span class="line"><span class="attribute">padding-right</span>:<span class="number">10px</span>;</span><br><span class="line"><span class="attribute">padding-bottom</span>:<span class="number">15px</span>;</span><br><span class="line"><span class="attribute">padding-left</span>:<span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -405,8 +446,8 @@ color:red;
 <ol>
 <li>参照定位的元素必须是相对定位元素的前辈元素：<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box1&quot;</span>&gt;</span><span class="comment">&lt;!--参照定位的元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;box2&quot;</span>&gt;</span>相对参照元素进行定位<span class="tag">&lt;/<span class="name">div</span>&gt;</span><span class="comment">&lt;!--相对定位元素--&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 从上面代码可以看出box1是box2的父元素（父元素当然也是前辈元素了）。</li>
-<li>参照定位的元素必须加入position:relative;<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#box1</span>&#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line"><span class="attribute">height</span>:<span class="number">200px</span>;</span><br><span class="line"><span class="attribute">position</span>:relative; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-<li>定位元素加入position:absolute，便可以使用top、bottom、left、right来进行偏移定位了。<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#box2</span>&#123;</span><br><span class="line"><span class="attribute">position</span>:absolute;</span><br><span class="line"><span class="attribute">top</span>:<span class="number">20px</span>;</span><br><span class="line"><span class="attribute">left</span>:<span class="number">30px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li>参照定位的元素必须加入position:relative;<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#box1</span>&#123;</span><br><span class="line"><span class="attribute">width</span>:<span class="number">200px</span>;</span><br><span class="line"><span class="attribute">height</span>:<span class="number">200px</span>;</span><br><span class="line"><span class="attribute">position</span>:relative;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+<li>定位元素加入position:absolute，便可以使用top、bottom、left、right来进行偏移定位了。<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-id">#box2</span>&#123;</span><br><span class="line"><span class="attribute">position</span>:absolute;</span><br><span class="line"><span class="attribute">top</span>:<span class="number">20px</span>;</span><br><span class="line"><span class="attribute">left</span>:<span class="number">30px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 这样box2就可以相对于父元素box1定位了（这里注意参照物就可以不是浏览器了，而可以自由设置了）。</li>
 </ol>
 <p>转载于作者：苏梦苓<br>链接：<a href="https://www.zhihu.com/question/406459509/answer/1673571297">https://www.zhihu.com/question/406459509/answer/1673571297</a></p>

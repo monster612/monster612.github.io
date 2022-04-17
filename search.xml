@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>article_name</title>
+    <url>/2021/3Q63Y87/</url>
+    <content><![CDATA[<p><img src="/2021/3Q63Y87/hh.jpg" alt="相对路径"></p>
+]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/151FCAP/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -25,18 +31,6 @@
       <tags>
         <tag>first</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>article_name</title>
-    <url>/2021/3Q63Y87/</url>
-    <content><![CDATA[<p><img src="/2021/3Q63Y87/hh.jpg" alt="相对路径"></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>image.md</title>
-    <url>/2021/6FNRGE/</url>
-    <content><![CDATA[<p>相对路径<br><img src="images/kangna.jpg" alt="相对路径"><br>绝对路径<br><img src="https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg" alt="绝对路径"></p>
-]]></content>
   </entry>
   <entry>
     <title>html+css基础</title>
@@ -222,17 +216,23 @@ type：只有当type值设置为reset时，按钮才有重置作用<br>value：�
 <li>从CSS 样式代码插入的形式来看基本可以分为以下3种：<br>内联式、嵌入式和外部式三种</li>
 </ul>
 <ol>
-<li>内联式css样式<br>就是把css代码直接写在现有的HTML标签中，如下面代码：<br><code>&lt;p style=&quot;color:red&quot;&gt;这里文字是红色。&lt;/p&gt;</code><br>css样式代码要写在style=””双引号中，如果有多条css样式代码设置可以写在一起，中间用分号隔开。如下代码：<br><code>&lt;p style=&quot;color:red;font-size:12px&quot;&gt;这里文字是红色。&lt;/p&gt;</code></li>
-<li>嵌入式css样式，<br>就是可以把css样式代码写在<style type="text/css"></style>标签之间。如下面代码实现把三个<span>标签中的文字设置为红色：<style type="text/css">
+<li><p>内联式css样式<br>就是把css代码直接写在现有的HTML标签中，如下面代码：<br><code>&lt;p style=&quot;color:red&quot;&gt;这里文字是红色。&lt;/p&gt;</code><br>css样式代码要写在style=””双引号中，如果有多条css样式代码设置可以写在一起，中间用分号隔开。如下代码：<br><code>&lt;p style=&quot;color:red;font-size:12px&quot;&gt;这里文字是红色。&lt;/p&gt;</code></p>
+</li>
+<li><p>嵌入式css样式，<br>就是可以把css样式代码写在<style type="text/css"></style>标签之间。如下面代码实现把三个<span>标签中的文字设置为红色：</span></p>
+<style type="text/css">
 span{
 color:red;
 }
 </style>
-嵌入式css样式必须写在<style></style>之间，并且一般情况下嵌入式css样式写在<head></head>之间。</span></li>
-<li>外部式css样式<br>写在单独的一个文件中<br>外部式css样式(也可称为外联式)就是把css代码写一个单独的外部文件中，这个css样式文件以“.css”为扩展名，在<code>&lt;head&gt;</code>内（不是在<style>标签内）使用<link>标签将css样式文件链接到HTML文件内，如下面代码：<br><code>&lt;link href=&quot;base.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code><br>注意：</li>
-<li>css样式文件名称以有意义的英文字母命名，如 main.css。</li>
-<li>rel=”stylesheet” type=”text/css” 是固定写法不可修改。</li>
-<li><link>标签位置一般写在<head>标签之内。</li>
+<p>嵌入式css样式必须写在<style></style>之间，并且一般情况下嵌入式css样式写在<head></head>之间。</p>
+</li>
+<li><p>外部式css样式<br>写在单独的一个文件中<br>外部式css样式(也可称为外联式)就是把css代码写一个单独的外部文件中，这个css样式文件以“.css”为扩展名，在<code>&lt;head&gt;</code>内（不是在<code>&lt;style&gt;</code>标签内）使用<link>标签将css样式文件链接到HTML文件内，如下面代码：<br><code>&lt;link href=&quot;base.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot; /&gt;</code><br>注意：</p>
+</li>
+<li><p>css样式文件名称以有意义的英文字母命名，如 main.css。</p>
+</li>
+<li><p>rel=”stylesheet” type=”text/css” 是固定写法不可修改。</p>
+</li>
+<li><link>标签位置一般写在<head>标签之内。</head></li>
 </ol>
 <ul>
 <li>CSS选择器<br>每一条css样式定义由两部分组成，形式如下：<br>选择器{<br>样式;<br>}<br>在{}之前的部分就是“选择器”，“选择器”指明了{}中的“样式”的作用对象，也就是“样式”作用于网页中的哪些元素<h2 id="六，-标签选择器"><a href="#六，-标签选择器" class="headerlink" title="六， 标签选择器"></a>六， 标签选择器</h2>标签选择器其实就是html代码中的标签。如右侧代码编辑器中的<code>&lt;html&gt;、&lt;body&gt;、&lt;h1&gt;、&lt;p&gt;、&lt;img&gt;</code>。例如下面代码：<br><code>p&#123;font-size:12px;line-height:1.6em;&#125;</code><br>上面的css样式代码的作用：为p标签设置12px字号，行间距设置1.6em的样式。</li>
@@ -404,7 +404,7 @@ color:red;
 这样box2就可以相对于父元素box1定位了（这里注意参照物就可以不是浏览器了，而可以自由设置了）。</li>
 </ol>
 <p>转载于作者：苏梦苓<br>链接：<a href="https://www.zhihu.com/question/406459509/answer/1673571297">https://www.zhihu.com/question/406459509/answer/1673571297</a></p>
-</style></li></ol>]]></content>
+]]></content>
       <categories>
         <category>web前端</category>
       </categories>
@@ -412,5 +412,11 @@ color:red;
         <tag>html</tag>
         <tag>css</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>image.md</title>
+    <url>/2021/6FNRGE/</url>
+    <content><![CDATA[<p>相对路径<br><img src="images/kangna.jpg" alt="相对路径"><br>绝对路径<br><img src="https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg" alt="绝对路径"></p>
+]]></content>
   </entry>
 </search>

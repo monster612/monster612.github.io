@@ -6,7 +6,7 @@
   <link href="https://monster612.github.io/atom.xml" rel="self"/>
   
   <link href="https://monster612.github.io/"/>
-  <updated>2022-04-17T13:00:12.878Z</updated>
+  <updated>2022-04-19T08:27:36.728Z</updated>
   <id>https://monster612.github.io/</id>
   
   <author>
@@ -15,6 +15,57 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>b/strong区别</title>
+    <link href="https://monster612.github.io/2022/undefined/"/>
+    <id>https://monster612.github.io/2022/undefined/</id>
+    <published>2022-04-19T08:22:17.000Z</published>
+    <updated>2022-04-19T08:27:36.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;title与h1的区别&quot;&gt;&lt;a href=&quot;#title与h1的区别&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="html" scheme="https://monster612.github.io/categories/html/"/>
+    
+    
+    <category term="html" scheme="https://monster612.github.io/tags/html/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css细节笔记</title>
+    <link href="https://monster612.github.io/2022/S203ER/"/>
+    <id>https://monster612.github.io/2022/S203ER/</id>
+    <published>2022-04-19T06:59:41.000Z</published>
+    <updated>2022-04-19T09:17:39.116Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;h3 id=&quot;padding百分比数值&quot;&gt;&lt;a href=&quot;#padding百分比数值&quot; class=&quot;headerlink&quot; title=&quot;padding百分比数值&quot;&gt;&lt;/a&gt;padding百分比数值&lt;/h3&gt;百分数值是相对于其父元素的 width</summary>
+        
+      
+    
+    
+    
+    <category term="css" scheme="https://monster612.github.io/categories/css/"/>
+    
+    
+    <category term="css" scheme="https://monster612.github.io/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>hexo编写博客问题</title>

@@ -7,6 +7,69 @@
 ]]></content>
   </entry>
   <entry>
+    <title>b/strong区别</title>
+    <url>/2022/undefined/</url>
+    <content><![CDATA[<h2 id="title与h1的区别"><a href="#title与h1的区别" class="headerlink" title="title与h1的区别"></a>title与h1的区别</h2><ul>
+<li><p>定义：</p>
+<p>title是网站标题，<br>h1是文章主题</p>
+</li>
+<li><p>作用：</p>
+<p>title概括网站信息，可以直接告诉搜索引擎和用户这 个网站是关于什么主题和内容的，是显示在网页Tab栏里的；<br>h1突出文章主题，面对用户，更突出其视觉效果，指向 页面主体信息，是显示在网页中的。</p>
+</li>
+</ul>
+<h2 id="b与strong的区别"><a href="#b与strong的区别" class="headerlink" title="b与strong的区别"></a>b与strong的区别</h2><ul>
+<li>定义：<br>b(bold)是实体标签，用来给文字加粗，<br>strong是逻辑标签，作用是加强字符语气。</li>
+<li>区别：<ol>
+<li>b标签只是加粗的样式，没有实际含义，常用来表达无强调或着重意味的粗体文字，比如文章摘要中的关键词、 评测文章中的产品名称、文章的导言；</li>
+<li>strong表示标签内字符重要，用以强调，其默认格式是加粗，但是可以通 过CSS添加样式，使用别的样式强调。</li>
+</ol>
+</li>
+</ul>
+<p>__建议__：为了符合CSS3的规范，b应尽量少用而改用strong</p>
+<h2 id="i与em的区别"><a href="#i与em的区别" class="headerlink" title="i与em的区别"></a>i与em的区别</h2><ul>
+<li><p>定义：  </p>
+<p>i(italic)是实体标签，用来使字符倾斜，<br>em(emphasis)是逻辑标签，作用是强调文本内容</p>
+</li>
+<li><p>区别：</p>
+<ol>
+<li><p>i标签只是斜体的样式，没有实际含义，常用来表达无强调或着重意味的斜体，比如生物学名、术语、外来语；</p>
+</li>
+<li><p>em表示标签内字符重要，用以强调，其默认格式是斜体，但是可以通过CSS添加样式。</p>
+</li>
+</ol>
+</li>
+</ul>
+<p>　　__建议__：为了符合CSS3的规 范，i应尽量少用而改用em</p>
+]]></content>
+      <categories>
+        <category>html</category>
+      </categories>
+      <tags>
+        <tag>html</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>css细节笔记</title>
+    <url>/2022/S203ER/</url>
+    <content><![CDATA[<ul>
+<li><h3 id="padding百分比数值"><a href="#padding百分比数值" class="headerlink" title="padding百分比数值"></a>padding百分比数值</h3>百分数值是相对于其父元素的 width 计算的，这一点与外边距一样。所以，如果父元素的 width 改变，它们也会改变。<br>下面这条规则把段落的内边距设置为父元素 width 的 10%：<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">p</span> &#123;<span class="attribute">padding</span>: <span class="number">10%</span>;&#125;</span><br></pre></td></tr></table></figure>
+例如：如果一个段落的父元素是 div 元素，那么它的内边距要根据 div 的 width 计算。<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">&lt;<span class="selector-tag">div</span> style=&quot;<span class="attribute">width</span>: <span class="number">200px</span>;&quot;&gt;</span><br><span class="line">&lt;<span class="selector-tag">p</span>&gt;This paragragh is contained within <span class="selector-tag">a</span> <span class="selector-tag">DIV</span> that has <span class="selector-tag">a</span> <span class="attribute">width</span> of <span class="number">200</span> pixels.&lt;/<span class="selector-tag">p</span>&gt;</span><br><span class="line">&lt;/<span class="selector-tag">div</span>&gt;</span><br></pre></td></tr></table></figure>
+__注意__：上下内边距与左右内边距一致；即上下内边距的百分数会相对于父元素宽度设置，而不是相对于高度。</li>
+<li><h3 id="内边距和元素宽度"><a href="#内边距和元素宽度" class="headerlink" title="内边距和元素宽度"></a>内边距和元素宽度</h3>CSS <code>width</code> 属性指定元素内容区域的宽度。内容区域是元素（盒模型）的内边距、边框和外边距内的部分。</li>
+</ul>
+<p> 因此，如果元素拥有指定的宽度，则添加到该元素的内边距会添加到元素的总宽度中。这通常是不希望的结果。</p>
+<p> 实例<br> <figure class="highlight css"><table><tr><td class="code"><pre><span class="line"> <span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><br>其实际宽度为<code>300+25=25=350px</code><br>若要将宽度保持为 300px，无论填充量如何，那么您可以使用 box-sizing 属性。这将导致元素保持其宽度。如果增加内边距，则可用的内容空间会减少。</p>
+<p> 使用<code>box-sizing=</code>属性将宽度保持为 300px，无论填充量如何：</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">width</span>: <span class="number">300px</span>;</span><br><span class="line">  <span class="attribute">padding</span>: <span class="number">25px</span>;</span><br><span class="line">  <span class="attribute">box-sizing</span>: border-box;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>css</category>
+      </categories>
+      <tags>
+        <tag>css</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2021/151FCAP/</url>
     <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
@@ -70,12 +133,6 @@
       <tags>
         <tag>hexo</tag>
       </tags>
-  </entry>
-  <entry>
-    <title>image.md</title>
-    <url>/2021/6FNRGE/</url>
-    <content><![CDATA[<p>相对路径<br><img src="images/kangna.jpg" alt="相对路径"><br>绝对路径<br><img src="https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg" alt="绝对路径"></p>
-]]></content>
   </entry>
   <entry>
     <title>html+css基础</title>
@@ -459,5 +516,11 @@ color:red;
         <tag>html</tag>
         <tag>css</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>image.md</title>
+    <url>/2021/6FNRGE/</url>
+    <content><![CDATA[<p>相对路径<br><img src="images/kangna.jpg" alt="相对路径"><br>绝对路径<br><img src="https://i.loli.net/2021/11/20/frnI2xLOkJm7KTq.jpg" alt="绝对路径"></p>
+]]></content>
   </entry>
 </search>
